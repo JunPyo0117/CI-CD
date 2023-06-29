@@ -20,6 +20,13 @@ RUN mv ./mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar /usr/lo
 COPY config/server.xml /usr/local/tomcat/conf/server.xml
 COPY config/context.xml /usr/local/tomcat/conf/context.xml
 
+# JSP 파일 복사
+COPY jsp/index.jsp /usr/local/tomcat/webapps/
+COPY jsp/join.jsp /usr/local/tomcat/webapps/
+COPY jsp/input.jsp /usr/local/tomcat/webapps/
+COPY jsp/output.jsp /usr/local/tomcat/webapps/
+COPY jsp/delete_do.jsp /usr/local/tomcat/webapps/
+
 # war 파일 복사
 #COPY ./sample.war $CATALINA_HOME/webapps
 
