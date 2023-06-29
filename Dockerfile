@@ -16,6 +16,10 @@ RUN tar -xf mysql-connector-java-5.1.40.tar.gz
 RUN mv ./mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar /usr/local/tomcat/lib/
 #RUN rm -rf mysql-connector-java-5.1.40.tar.gz
 
+# config 파일 복사
+copy config/server.xml /usr/local/tomcat/conf/server.xml
+copy config/context.xml /usr/local/tomcat/conf/context.xml
+
 # war 파일 복사
 #COPY ./sample.war $CATALINA_HOME/webapps
 
