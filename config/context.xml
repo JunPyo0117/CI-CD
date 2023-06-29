@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+  <Context allowLinking="true">
+
+      <Resources allowLinking="true" />
+      <WatchedResource>WEB-INF/web.xml</WatchedResource>
+      <WatchedResource>WEB-INF/tomcat-web.xml</WatchedResource>
+      <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
+
+      <!--
+      <Manager pathname="SESSIONS.ser" />
+      -->
+  </Context>
