@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('podman') {
             steps {
-                echo 'Hello World'
-		echo 'Hi man'
-                echo 'Hi woman'
+                sudo podman build -t tomcat:test -f /home/ubuntu/my-git/CI-CD/tomcatDockerfile .
+		sudo podman tag tomcat:test 52.79.48.121:30002/ajp-repository/tomcat:harbor
+		sudo podman push 52.79.48.121:30002/ajp-repository/tomcat-repository/tomcat:harbor
             }
         }
     }
