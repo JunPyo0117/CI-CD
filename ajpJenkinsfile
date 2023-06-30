@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('podman') {
             steps {
-                sudo podman build -t tomcat:test -f /var/lib/jenkins/workspace/ajp-pipeline/tomcat/Dockerfile .
+                sh 'sudo podman build -t tomcat:test -f /var/lib/jenkins/workspace/ajp-pipeline/tomcat/Dockerfile .'
+		sh 'sudo podman tag tomcat:test 52.79.48.121:30002/ajp-repository/tomcat:harbor'
+		sh 'sudo podman push 52.79.48.121:30002/ajp-repository/tomcat:harbor'
             }
         }
     }
