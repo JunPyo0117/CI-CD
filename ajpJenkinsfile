@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'Hello World'
 		echo 'Hi man'
+                echo 'Hi woman'
             }
         }
     }
