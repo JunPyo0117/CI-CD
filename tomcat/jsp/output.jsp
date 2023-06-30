@@ -25,7 +25,7 @@ Class.forName("com.mysql.jdbc.Driver"); // load the drive
 String DB_URL = "jdbc:mysql://172.27.0.166:3306/test";    //DB IP 주소/DB 명
 
 // 주의 : test by changing mydb to name that you make
-
+// nh test
  
 
 String DB_USER = "testuser";            //DB 사용자 명
