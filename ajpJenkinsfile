@@ -16,8 +16,7 @@ pipeline {
         }
 		stage('deployment') {
             steps {
-	        sh 'pwd'
-		sh 'ls -al'
+	        sh 'kubectl apply -f yaml/nginx/nginx-deployment.yaml'
             }
         }
     }
