@@ -22,7 +22,7 @@ COPY tomcat/config/server.xml /usr/local/tomcat/conf/server.xml
 COPY tomcat/config/context.xml /usr/local/tomcat/conf/context.xml
 
 # JSP 파일 복사
-COPY jsp/* /usr/local/tomcat/webapps/
+COPY tomcat/jsp/* /usr/local/tomcat/webapps/
 #COPY jsp/index.jsp /usr/local/tomcat/webapps/
 #COPY jsp/join.jsp /usr/local/tomcat/webapps/
 #COPY jsp/input.jsp /usr/local/tomcat/webapps/
