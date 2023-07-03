@@ -17,8 +17,8 @@ RUN mv ./mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar /usr/lo
 #RUN rm -rf mysql-connector-java-5.1.40.tar.gz
 
 # config 파일 복사
-COPY config/server.xml /usr/local/tomcat/conf/server.xml
-COPY config/context.xml /usr/local/tomcat/conf/context.xml
+COPY ./config/server.xml /usr/local/tomcat/conf/server.xml
+COPY ./config/context.xml /usr/local/tomcat/conf/context.xml
 
 # JSP 파일 복사
 COPY jsp/* /usr/local/tomcat/webapps/
