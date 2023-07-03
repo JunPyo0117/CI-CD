@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: nginx-configmap
-  namespaces: ajp-namespaces
+  namespace: ajp-namespaces
 data:
   nginx.conf: |
     server {
