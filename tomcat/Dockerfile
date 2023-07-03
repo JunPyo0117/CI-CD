@@ -15,7 +15,7 @@ RUN wget https://downloads.mysql.com/archives/get/p/3/file/mysql-connector-java-
 RUN tar -xf mysql-connector-java-5.1.40.tar.gz
 RUN mv ./mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar /usr/local/tomcat/lib/
 RUN rm -rf mysql-connector-java-5.1.40.tar.gz
-RUN PWD
+RUN pwd
 
 # config 파일 복사
 COPY tomcat/config/server.xml /usr/local/tomcat/conf/server.xml
