@@ -1,18 +1,18 @@
 # 목차
-1.Kubernetes Cluster Architecture
-  1-1 쿠버네티스 클러스터 구성 요소
-       1-1-1 Master Node(control Plane)
+[1.Kubernetes Cluster Architecture]
+  [1-1 쿠버네티스 클러스터 구성 요소]
+       [1-1-1 Master Node(control Plane)]
              - API Server / ETCD / Controller Manager / Scheduler
-       1-1-2 Workder Node
+       [1-1-2 Workder Node]
              - kubelet / kube-proxy
-       1-1-3 Pod
-       1-1-4 ReplicaSets
-       1-1-5 Deployment
-       1-1-6 Service
+       [1-1-3 Pod]
+       [1-1-4 ReplicaSets]
+       [1-1-5 Deployment]
+       [1-1-6 Service]
              - ClusterIP / Loadbalancer / nodePort
-       1-1-7 Ingress
-       1-1-8 Namespaces
-       1-1-9 Imperative vs Declarative
+       [1-1-7 Ingress]
+       [1-1-8 Namespaces]
+       [1-1-9 Imperative vs Declarative]
 
 2. PaaS-TA 컨테이너 플랫폼 단독 배포
    2-1 단독 배포 아키텍쳐
