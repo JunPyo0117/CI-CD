@@ -10,7 +10,7 @@ pipeline {
         }
 		stage('podman tag & push') {
             steps {
-		      sh 'sudo podman tag tomcat:test 52.79.48.121:30002/ajp-repository/nginx:youtube'
+		      sh 'sudo podman tag nginx:youtube 52.79.48.121:30002/ajp-repository/nginx:youtube'
 	              sh 'sudo podman push 52.79.48.121:30002/ajp-repository/nginx:youtube --tls-verify=false'
             }
         }
