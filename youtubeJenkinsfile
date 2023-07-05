@@ -16,8 +16,8 @@ pipeline {
         }
 		stage('deployment') {
             steps {
-                      sh 'kubectl apply -f nginx(youtube)/yaml/nginx-service.yaml'
-	              sh 'kubectl apply -f nginx(youtube)/yaml/nginx-deployment.yaml'
+                      sh 'kubectl apply -f nginx(youtube)/yaml/youtube-nginx-service.yaml'
+	              sh 'kubectl apply -f nginx(youtube)/yaml/youtube-nginx-deployment.yaml'
             }
         }
     }
