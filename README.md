@@ -15,18 +15,18 @@
 &nbsp;&nbsp;1-1-9 Imperative vs Declarative  
 
 2. PaaS-TA 컨테이너 플랫폼 단독 배포  
-&nbsp;&nbsp;2-1 단독 배포 아키텍쳐  
-&nbsp;&nbsp;2-2 Kubespray를 통한 클러스터 설치 법(PaaS-TA 깃허브 인용, kubespray 등 애매했던 개념들 작성)  
-&nbsp;&nbsp;2-3 컨테이너 플랫폼 포털 사용법  
+&nbsp;2-1 단독 배포 아키텍쳐  
+&nbsp;2-2 Kubespray를 통한 클러스터 설치 법(PaaS-TA 깃허브 인용, kubespray 등 애매했던 개념들 작성)  
+&nbsp;2-3 컨테이너 플랫폼 포털 사용법  
 
 
 3. Jenkins를 사용한 파이프라인 구축  
-&nbsp;&nbsp;3-1 구축 구성도   
-&nbsp;&nbsp;3-2 젠킨스 설치  
-&nbsp;&nbsp;3-3 젠킨스 깃허브 연동(webhook/ credentials)  
-&nbsp;&nbsp;3-4 명령어 설치(kubectl / podman)  
-&nbsp;&nbsp;3-5 파이프라인 코드 작성 및 테스트  
-&nbsp;&nbsp;3-6 파이프라인 배포 확인  
+&nbsp;3-1 구축 구성도   
+&nbsp;3-2 젠킨스 설치  
+&nbsp;3-3 젠킨스 깃허브 연동(webhook/ credentials)  
+&nbsp;3-4 명령어 설치(kubectl / podman)  
+&nbsp;3-5 파이프라인 코드 작성 및 테스트  
+&nbsp;3-6 파이프라인 배포 확인  
 
    
 # Kubernetes CI-CD 환경 구축
