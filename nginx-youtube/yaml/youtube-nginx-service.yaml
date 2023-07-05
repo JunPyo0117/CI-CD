@@ -9,5 +9,5 @@ spec:
   ports:
     - port: 80
       protocol: TCP
-      targetPort: 5000
+      targetPort: 31112
   type: ClusterIP
