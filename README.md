@@ -1,5 +1,5 @@
 # 목차
-1.Kubernetes Cluster Architecture  
+1. Kubernetes Cluster Architecture  
 &nbsp;1-1 쿠버네티스 클러스터 구성 요소  
 &nbsp;&nbsp;1-1-1 Master Node(control Plane)  
 &nbsp;&nbsp;&nbsp;- API Server / ETCD / Controller Manager / Scheduler  
