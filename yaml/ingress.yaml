@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress                       
+metadata:
+  name: ingress-example     
+  namespace: ajp-namespaces
+spec:       
+  ingressClassName: nginx
+  rules:
+  - http:
+      paths:
+      - pathType: Prefix
+        path: "/signup"
+        backend:                  
+          service:
+            name: nginx-service
+            port: 
+              number: 80
+      - pathType: Prefix
+        path: "/youtube"
+        backend: 
+          service:
+            name: youtube-nginx
+            port: 
+              number: 80
