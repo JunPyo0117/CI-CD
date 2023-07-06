@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: hello-nginx
-          image: nginx:latest
+          image: 52.79.48.121:30002/ajp-repository/nginx:signup
           ports:
             - containerPort: 80
 #          volumeMounts:
