@@ -14,11 +14,11 @@ spec:
           service:
             name: hello-nginx
             port: 
-              number: 9001
+              number: 80
       - pathType: Prefix
         path: "/youtube"
         backend: 
           service:
             name: youtube-nginx
             port: 
-              number: 9002
+              number: 80
