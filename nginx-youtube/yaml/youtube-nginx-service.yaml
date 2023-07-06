@@ -7,7 +7,7 @@ spec:
   selector:
     app: youtube-nginx
   ports:
-    - port: 9002
+    - port: 80
       protocol: TCP
       targetPort: 80
   type: ClusterIP
