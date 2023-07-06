@@ -26,7 +26,7 @@ pipeline {
                 sh 'kubectl apply -f yaml/nginx/nginx-configmap.yaml'
                 sh 'kubectl apply -f yaml/nginx/nginx-service.yaml'
 	        sh 'kubectl apply -f yaml/nginx/nginx-deployment.yaml'
-	        sh 'kubectl rollout restart deployment deployment.apps/hello-nginx -n ajp-namespaces'
+	        sh 'kubectl rollout restart deployment hello-nginx -n ajp-namespaces'
             }
         }
     }
