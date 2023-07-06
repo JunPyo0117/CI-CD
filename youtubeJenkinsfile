@@ -18,7 +18,7 @@ pipeline {
             steps {
                       sh 'kubectl apply -f nginx-youtube/yaml/youtube-nginx-service.yaml'
 	              sh 'kubectl apply -f nginx-youtube/yaml/youtube-nginx-deployment.yaml'
-	              sh 'kubectl rollout restart deployment deployment.apps/hello-nginx -n ajp-namespaces'
+	              sh 'kubectl rollout restart deployment hello-nginx -n ajp-namespaces'
             }
         }
     }
