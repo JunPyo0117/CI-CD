@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress                       
 metadata:
   name: ingress-ajp   
-  namespace: ajp-namespaces
+#  namespace: ajp-namespaces
 spec:       
   ingressClassName: nginx
   rules:
