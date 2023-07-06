@@ -9,7 +9,7 @@ spec:
   - http:
       paths:
       - pathType: Prefix
-        path: "/"
+        path: "/signup"
         backend:                  
           service:
             name: hello-nginx
