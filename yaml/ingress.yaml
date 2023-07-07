@@ -8,13 +8,13 @@ spec:
   rules:
   - http:
       paths:
-      - pathType: Prefix
-        path: "/"
-        backend:                  
-          service:
-            name: hello-nginx
-            port: 
-              number: 80
+#      - pathType: Prefix
+#        path: "/"
+#        backend:                  
+#          service:
+#            name: hello-nginx
+#            port: 
+#              number: 80
       - pathType: Prefix
         path: "/signup"
         backend:                  
