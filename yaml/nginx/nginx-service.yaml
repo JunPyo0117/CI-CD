@@ -7,7 +7,7 @@ spec:
   selector:
     app: hello-nginx
   ports:
-    - port: 80
+    - port: 9002
       protocol: TCP
       targetPort: 80
   type: ClusterIP
