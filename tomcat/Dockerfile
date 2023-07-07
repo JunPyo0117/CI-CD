@@ -5,7 +5,9 @@ MAINTAINER jyson
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
 RUN mkdir -p "$CATALINA_HOME"
-#WORKDIR mkdir -p /usr/local/tomcat/webapps/signup
+RUN mkdir -p /usr/local/tomcat/webapps/signup
+WORKDIR ${CATALINA_HOME}
+
 
 # 톰캣 설치 파일 다운로드 실행 및 압축해제
 #RUN wget http://apache.mirror.cdnetworks.com/tomcat/tomcat-10/v10.0.20/bin/apache-tomcat-10.0.20.tar.gz;
@@ -22,7 +24,7 @@ COPY tomcat/config/server.xml /usr/local/tomcat/conf/server.xml
 COPY tomcat/config/context.xml /usr/local/tomcat/conf/context.xml
 
 # JSP 파일 복사
-COPY tomcat/jsp/* /usr/local/tomcat/webapps
+COPY tomcat/jsp/* /usr/local/tomcat/webapps/signup
 #COPY jsp/index.jsp /usr/local/tomcat/webapps/
 #COPY jsp/join.jsp /usr/local/tomcat/webapps/
 #COPY jsp/input.jsp /usr/local/tomcat/webapps/
