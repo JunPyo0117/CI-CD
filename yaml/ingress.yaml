@@ -16,6 +16,13 @@ spec:
             port: 
               number: 80
       - pathType: Prefix
+        path: "/signup"
+        backend:                  
+          service:
+            name: hello-nginx
+            port: 
+              number: 80
+      - pathType: Prefix
         path: "/youtube"
         backend: 
           service:
