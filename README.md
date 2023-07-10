@@ -28,6 +28,31 @@
 &nbsp;3-5 파이프라인 코드 작성 및 테스트  
 &nbsp;3-6 파이프라인 배포 확인  
 
+## Github 파일 구성요소
+- nginx-youtube
+  - html
+  - yaml
+  - Dockerfile
+- nginx
+  - config 파일
+  - Dockerfile
+- tomcat
+  - config 파일
+  - jsp 파일
+  - Dockerfile
+- yaml
+  - tomcat
+    - Deployment
+    - Service
+  - nginx
+    - Deployment
+    - Service
+    - Configmap
+  - ingress
+- ajpJenkinsfile
+  - Jenkins 파이프라인 코드(회원가입 페이지)
+- youtubeJenkinsfile
+  - Jenkins 파이프라인 코드(유튜브 영상 출력 페이지)
    
 # 2. PaaS-TA 컨테이너 플랫폼 단독 배포
 ## 2-1 단독배포 아키텍쳐
