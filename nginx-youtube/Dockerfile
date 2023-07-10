@@ -3,6 +3,7 @@ FROM nginx
 # 디렉터리 생성
 RUN mkdir -p /usr/share/nginx/html/youtube
 
+# 
 #COPY index.html /usr/share/nginx/html
 #COPY index.html /usr/share/nginx/html/youtube
 
