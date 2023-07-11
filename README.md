@@ -152,8 +152,10 @@ kubespray를 통해 kubernetest 클러스터 구성이 완료됐다면 PaaS-TA �
 ## 3-4 명령어 설치(kubectl / podman) 명노훈
 	
 ## 3-5 파이프라인 코드 작성 및 테스트 
+
 <details>
-<summary>접기/펼치기</summary>
+<summary>접기/펼치기</summary>  
+	
 ### Github 파일 구성요소
 - nginx-youtube
   - html
