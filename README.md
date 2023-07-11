@@ -150,11 +150,10 @@ kubespray를 통해 kubernetest 클러스터 구성이 완료됐다면 PaaS-TA �
 ## 3-2 젠킨스 설치 [혜환 주임님]
 ## 3-3 젠킨스 깃허브 연동(webhook/ credentials) 명노훈
 ## 3-4 명령어 설치(kubectl / podman) 명노훈
-
-<details>
-<summary>접기/펼치기</summary>
 	
 ## 3-5 파이프라인 코드 작성 및 테스트 
+<details>
+<summary>접기/펼치기</summary>
 ### Github 파일 구성요소
 - nginx-youtube
   - html
@@ -268,7 +267,8 @@ pipeline {
 - 회원가입 페이지 Deployment
   + Harbor에 저장한 이미지 기반으로 nginx/tomcat 배포
   + rollout 명령어를 통해 Rollingupdate
-  
+
+</details>
 
 
 ## 3-6 파이프라인 배포 확인
@@ -281,4 +281,4 @@ pipeline {
   + 유튜브 영상 페이지  
 ![image](https://github.com/JunPyo0117/kubernetes/assets/80608601/1a797c1a-4961-4f92-b8af-655cd2681f44)  
 ![image](https://github.com/JunPyo0117/kubernetes/assets/80608601/5550f8e8-d966-4e33-849c-bf36844c86ab)
-</details>
+
