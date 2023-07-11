@@ -55,6 +55,10 @@
   - Jenkins 파이프라인 코드(유튜브 영상 출력 페이지)
    
 # 2. PaaS-TA 컨테이너 플랫폼 단독 배포
+
+<details>
+<summary>접기/펼치기</summary>
+	
 ## 2-1 단독배포 아키텍쳐
 ![image](https://github.com/JunPyo0117/kubernetes/assets/80608601/675bb582-592e-4dff-863f-44fbd241f4e1)  
 
@@ -139,13 +143,17 @@ kubespray를 통해 kubernetest 클러스터 구성이 완료됐다면 PaaS-TA �
 - Roles - PaaS-TA 컨테이너 플랫폼 포털 계정 역할 조회
 ![image](https://github.com/JunPyo0117/kubernetes/assets/80608601/9105b991-6401-454f-bbc3-7df5029525d7)
 
+</details>
+
 # 3.Jenkins를 사용한 파이프라인 구축
 ## 3-1 구축 구성도 [혜환 주임님]
 ## 3-2 젠킨스 설치 [혜환 주임님]
 ## 3-3 젠킨스 깃허브 연동(webhook/ credentials) 명노훈
 ## 3-4 명령어 설치(kubectl / podman) 명노훈
 
-
+<details>
+<summary>접기/펼치기</summary>
+	
 ## 3-5 파이프라인 코드 작성 및 테스트 
 ### Github 파일 구성요소
 - nginx-youtube
@@ -272,4 +280,5 @@ pipeline {
 ![image](https://github.com/JunPyo0117/kubernetes/assets/80608601/3a78dfd9-7508-45bc-96e6-b12ddef3bd02)  
   + 유튜브 영상 페이지  
 ![image](https://github.com/JunPyo0117/kubernetes/assets/80608601/1a797c1a-4961-4f92-b8af-655cd2681f44)  
-![image](https://github.com/JunPyo0117/kubernetes/assets/80608601/5550f8e8-d966-4e33-849c-bf36844c86ab)  
+![image](https://github.com/JunPyo0117/kubernetes/assets/80608601/5550f8e8-d966-4e33-849c-bf36844c86ab)
+</details>
