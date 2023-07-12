@@ -1,6 +1,8 @@
 ## Namespaces
+- 오브젝트를 묶는 하나의 가상공간 또는 그룹
+- 네임스페이스를 통해 CPU/GPU 할당량 조절할 수 있음
+  
 + `dev`환경과 `prod`환경을 구별할 수 있음
-
 ```bash
 kubectl get namespaces
  
