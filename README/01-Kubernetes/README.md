@@ -1,57 +1,8 @@
-# Kubernetes Cluster Architecture
-## 목차
-1. Kubernetes Cluster Architecture  
-&nbsp;1-1 쿠버네티스 클러스터 구성 요소  
-&nbsp;&nbsp;1-1-1 Master Node(control Plane)  
-&nbsp;&nbsp;&nbsp;- API Server / ETCD / Controller Manager / Scheduler  
-&nbsp;&nbsp;1-1-2 Workder Node  
-&nbsp;&nbsp;&nbsp;- kubelet / kube-proxy  
-&nbsp;&nbsp;1-1-3 Pod  
-&nbsp;&nbsp;1-1-4 ReplicaSets  
-&nbsp;&nbsp;1-1-5 Deployment  
-&nbsp;&nbsp;1-1-6 Service  
-&nbsp;&nbsp;&nbsp;- ClusterIP / Loadbalancer / nodePort  
-&nbsp;&nbsp;1-1-7 Ingress  
-&nbsp;&nbsp;1-1-8 Namespaces  
-&nbsp;&nbsp;1-1-9 Imperative vs Declarative  
+# 1. Kubernetes Cluster
 
-
-# 클러스터란
-  - 컨테이너화된 애플리케이션을 실행하는 노드의 집합
-  - 모든 클러스터는 최소 1개의 워커 노드를 가진다
+  > 컨테이너화된 애플리케이션을 실행하는 노드의 집합  
+  > 모든 클러스터는 최소 1개의 워커 노드를 가진다
+   
 ## 클러스터 아키텍처
 ![image](https://github.com/JunPyo0117/CI-CD/assets/71053769/ebe3d9f7-7fff-4695-b952-533cfee44d38)
-
-## 쿠버네티스 클러스터 구성요소
-
-> ### Master node(control Plane)
-## 역할
-  - 워커 노드와 클러스터 내 파드를 관리
-    
-## 구성 요소   
-  - **API Server**
-    - 쿠버네티스 API를 노출하는 쿠버네티스 컨트롤 플레인 컴포넌트
-    - 컨트롤 플레인의 프론트 엔드
-  - **ETCD**
-    - 모든 클러스터 데이터를 저장하는 쿠버네티스 뒷단의 저장소
-    - 키-값 형식으로 데이터 저장
-  - **Controller Manager**
-    - 컨트롤러 프로세스를 실행
-    - 컨트롤러: 클러스터의 상태를 관찰 후 필요에 따라 클러스터의 상태를 변경
-  - **Scheduler**
-    - 새로 생성되는 파드를 감지하고 실행할 노드를 선택
   
-> ### Worker node
-## 역할
-  - 애플리케이션의 구성요소인 파드를 호스트한다
-  - 동작중이 파드를 유지
-  - 쿠버네티스 런타임 환경을 제공
-   
-## 구성 요소   
-  - **Kublet**
-    - 파트에서 컨테이너가 동작하도록 관리
-  - **Kube Proxy**
-    - 클러스터의 각 노드에서 실행되는 네트워크 프록시
-    - 쿠버네티스의 서비스 개념을 구현
-    - 노드의 네트워크 규칙을 유지관리
-    
