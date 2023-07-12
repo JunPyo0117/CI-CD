@@ -21,8 +21,8 @@
 
 2. PaaS-TA 컨테이너 플랫폼 단독 배포  
 &nbsp;2-1 단독 배포 아키텍쳐  
-&nbsp;2-2 Kubespray를 통한 클러스터 설치 법(PaaS-TA 깃허브 인용, kubespray 등 애매했던 개념들 작성)  
-&nbsp;2-3 컨테이너 플랫폼 포털 사용법  
+&nbsp;2-2 Kubespray를 통한 클러스터 설치(PaaS-TA 깃허브)  
+&nbsp;2-3 컨테이너 플랫폼 포털 사용법
 
 
 3. Jenkins를 사용한 파이프라인 구축  
