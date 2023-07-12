@@ -5,7 +5,7 @@ pipeline {
         stage('harbor login & podman build') {
             steps {
                       sh 'sudo podman login 52.79.48.121:30002 --username admin --password Harbor12345 --tls-verify=false'
-                      sh 'sudo podman build -t nginx:youtube -f nginx-youtube/Dockerfile .'
+                      sh 'sudo podman build -t nginx:youtube -f youtube-app/Dockerfile .'
             }
         }
 		stage('podman tag & push') {
@@ -16,8 +16,8 @@ pipeline {
         }
 		stage('deployment') {
             steps {
-                      sh 'kubectl apply -f nginx-youtube/yaml/youtube-nginx-service.yaml'
-	              sh 'kubectl apply -f nginx-youtube/yaml/youtube-nginx-deployment.yaml'
+                      sh 'kubectl apply -f youtube-app/yaml/youtube-nginx-service.yaml'
+	              sh 'kubectl apply -f youtube-app/yaml/youtube-nginx-deployment.yaml'
 	              sh 'kubectl rollout restart deployment youtube-nginx -n ajp-namespaces'
             }
         }

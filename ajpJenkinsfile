@@ -5,8 +5,8 @@ pipeline {
         stage('harbor login & podman build') {
             steps {
                 sh 'sudo podman login 52.79.48.121:30002 --username admin --password Harbor12345 --tls-verify=false'
-                sh 'sudo podman build -t tomcat:test -f tomcat/Dockerfile .'
-                sh 'sudo podman build -t nginx:signup -f nginx/Dockerfile .'
+                sh 'sudo podman build -t tomcat:test -f signup-app/tomcat/Dockerfile .'
+                sh 'sudo podman build -t nginx:signup -f signup-app/nginx/Dockerfile .'
             }
         }
 		stage('podman tag & push') {
@@ -19,14 +19,14 @@ pipeline {
         }
 		stage('deployment') {
             steps {
-                sh 'kubectl apply -f yaml/ingress.yaml'
-                sh 'kubectl apply -f yaml/tomcat/tomcat-service.yaml'
-		sh 'kubectl apply -f yaml/tomcat/tomcat-deployment.yaml'
+                sh 'kubectl apply -f signup-app/yaml/ingress.yaml'
+                sh 'kubectl apply -f signup-app/yaml/tomcat/tomcat-service.yaml'
+		sh 'kubectl apply -f signup-app/yaml/tomcat/tomcat-deployment.yaml'
 	        sh 'kubectl rollout restart deployment tomcat-deployment -n ajp-namespaces'
 
-                sh 'kubectl apply -f yaml/nginx/nginx-configmap.yaml'
-                sh 'kubectl apply -f yaml/nginx/nginx-service.yaml'
-	        sh 'kubectl apply -f yaml/nginx/nginx-deployment.yaml'
+                sh 'kubectl apply -f signup-app/yaml/nginx/nginx-configmap.yaml'
+                sh 'kubectl apply -f signup-app/yaml/nginx/nginx-service.yaml'
+	        sh 'kubectl apply -f signup-app/yaml/nginx/nginx-deployment.yaml'
 	        sh 'kubectl rollout restart deployment hello-nginx -n ajp-namespaces'
             }
         }

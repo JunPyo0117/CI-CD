@@ -20,11 +20,11 @@ RUN rm -rf mysql-connector-java-5.1.40.tar.gz
 #RUN podman login 52.79.48.121:30002 --username admin --password Harbor12345 --tls-verify=false
 
 # config 파일 복사
-COPY tomcat/config/server.xml /usr/local/tomcat/conf/server.xml
-COPY tomcat/config/context.xml /usr/local/tomcat/conf/context.xml
+COPY signup-app/tomcat/config/server.xml /usr/local/tomcat/conf/server.xml
+COPY signup-app/tomcat/config/context.xml /usr/local/tomcat/conf/context.xml
 
 # JSP 파일 복사
-COPY tomcat/jsp/* /usr/local/tomcat/webapps/signup
+COPY signup-app/tomcat/jsp/* /usr/local/tomcat/webapps/signup
 #COPY jsp/index.jsp /usr/local/tomcat/webapps/
 #COPY jsp/join.jsp /usr/local/tomcat/webapps/
 #COPY jsp/input.jsp /usr/local/tomcat/webapps/
