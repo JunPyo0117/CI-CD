@@ -1,4 +1,4 @@
-# 목차
+# README 목차
 1. Kubernetes Cluster Architecture  
 &nbsp;1-1 쿠버네티스 클러스터 구성 요소  
 &nbsp;&nbsp;1-1-1 Master Node(control Plane)  
@@ -54,3 +54,8 @@
   - Jenkins 파이프라인 코드(회원가입 페이지)
 - youtubeJenkinsfile
   - Jenkins 파이프라인 코드(유튜브 영상 출력 페이지)
+
+# 개요 
+- Kubernetes 기본 개념 및 구성 요소
+- PaaS-TA 컨테이너 플랫폼 단독 배포를 통해 Kubernetes Cluster 구성 및 PaaS-TA 포털 배포
+- Jenkins CI-CD 환경 구성 및 테스트
