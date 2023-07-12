@@ -1,25 +1,26 @@
 ## 3-5 파이프라인 코드 작성 및 테스트 
-### Github 파일 구성요소
-- nginx-youtube
-  - html
-  - yaml
-  - Dockerfile
-- nginx
-  - config 파일
-  - Dockerfile
-- tomcat
-  - config 파일
-  - jsp 파일
-  - Dockerfile
-- yaml
-  - tomcat
-    - Deployment
-    - Service
-  - nginx
-    - Deployment
-    - Service
-    - Configmap
-  - ingress
+## Github 파일 구성요소
+- youtube-app
+  + html
+  + yaml
+  + Dockerfile
+- signup-app
+  + nginx
+    * config 파일
+    * Dockerfile
+  + tomcat
+    * config 파일
+    * jsp 파일
+    * Dockerfile
+  + yaml
+    * tomcat
+      - Deployment
+      - Service
+    * nginx
+      - Deployment
+      - Service
+      - Configmap
+    * ingress
 - ajpJenkinsfile
   - Jenkins 파이프라인 코드(회원가입 페이지)
 - youtubeJenkinsfile
