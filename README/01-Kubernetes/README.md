@@ -25,7 +25,6 @@
 ## 쿠버네티스 클러스터 구성요소
 
 > ### Master node(control Plane)
-# 1-1 Master Node
 ## 역할
   - 워커 노드와 클러스터 내 파드를 관리
     
