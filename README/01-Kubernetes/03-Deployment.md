@@ -1,4 +1,6 @@
 ## Deployment
+## 기능
+- 파드와 레플리카셋(ReplicaSet)에 대한 선언적 업데이트를 제공
 
 `kind : Deployment` 제외하고, **Replicasets** 정의와 yaml 동일 
 
