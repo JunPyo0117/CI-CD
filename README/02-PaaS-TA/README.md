@@ -1,7 +1,4 @@
 # 2. PaaS-TA 컨테이너 플랫폼 단독 배포
-
-<details>
-<summary>접기/펼치기</summary>
 	
 ## 2-1 단독배포 아키텍쳐
 ![image](https://github.com/JunPyo0117/kubernetes/assets/80608601/675bb582-592e-4dff-863f-44fbd241f4e1)  
@@ -87,4 +84,3 @@ kubespray를 통해 kubernetest 클러스터 구성이 완료됐다면 PaaS-TA �
 - Roles - PaaS-TA 컨테이너 플랫폼 포털 계정 역할 조회
 ![image](https://github.com/JunPyo0117/kubernetes/assets/80608601/9105b991-6401-454f-bbc3-7df5029525d7)
 
-</details>
