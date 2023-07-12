@@ -29,26 +29,27 @@
 &nbsp;3-6 파이프라인 배포 확인  
 
 ## Github 파일 구성요소
-- nginx-youtube
-  - html
-  - yaml
-  - Dockerfile
-- nginx
-  - config 파일
-  - Dockerfile
-- tomcat
-  - config 파일
-  - jsp 파일
-  - Dockerfile
-- yaml
-  - tomcat
-    - Deployment
-    - Service
-  - nginx
-    - Deployment
-    - Service
-    - Configmap
-  - ingress
+- youtube-app
+  + html
+  + yaml
+  + Dockerfile
+- signup-app
+  + nginx
+    * config 파일
+    * Dockerfile
+  + tomcat
+    * config 파일
+    * jsp 파일
+    * Dockerfile
+  + yaml
+    * tomcat
+      - Deployment
+      - Service
+    * nginx
+      - Deployment
+      - Service
+      - Configmap
+    * ingress
 - ajpJenkinsfile
   - Jenkins 파이프라인 코드(회원가입 페이지)
 - youtubeJenkinsfile
