@@ -19,7 +19,7 @@ Kubespary를 통해 Kubernetes Cluster를 설치하고 Pod를 통해 Database, P
 - github을 클론받게 되면, ansible yaml파일들이 정리
 - Ansible의 playbook과 inventory설정을 통해서 kubernetes 클러스터를 설정
 
-[Kubernetes Clouster 설치가이드(PaaS-TA Github)](https://github.com/PaaS-TA/paas-ta-container-platform/blob/master/install-guide/standalone/cp-cluster-install.md)  
+[Kubernetes Cluster 설치가이드(PaaS-TA Github)](https://github.com/PaaS-TA/paas-ta-container-platform/blob/master/install-guide/standalone/cp-cluster-install.md)  
 (위 링크 참조하여 kubespray로 쿠버네티스 클러스터 구성)
 
 ## 2-3 PaaS-TA 컨테이너 플랫폼 단독형 배포 포털 설치
