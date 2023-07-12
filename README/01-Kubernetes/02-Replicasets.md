@@ -1,5 +1,8 @@
 ## Replicasets
-
+## 기능
+- 명시된 파드 가용성 보증
+- 복제 파드 집합의 실행을 항상 안정적으로 유지
+- 
 replicasets yaml 작성 가이드
 ```bash
 kubectl explain replicaset 
