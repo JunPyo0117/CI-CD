@@ -8,7 +8,7 @@
    
 ## 1-2-2 구성 요소   
 ![image](https://github.com/JunPyo0117/CI-CD/assets/71053769/06e69901-7135-43d3-8e78-55ba5f1bad31)
-  - **Kubㄷlet**
+  - **Kubelet**
     - 파트에서 컨테이너가 동작하도록 관리
   - **Kube Proxy**
     - 클러스터의 각 노드에서 실행되는 네트워크 프록시
