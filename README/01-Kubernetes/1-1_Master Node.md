@@ -1,7 +1,8 @@
 # 1-1 Master Node
 ## 1-1-1 역할
   - 워커 노드와 클러스터 내 파드를 관리
-   
+    ![image](https://github.com/JunPyo0117/CI-CD/assets/71053769/d9409834-0eeb-411b-a0c3-918cd887d1e0)
+
 ## 1-1-2 구성 요소   
   - **API Server**
     - 쿠버네티스 API를 노출하는 쿠버네티스 컨트롤 플레인 컴포넌트
