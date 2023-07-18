@@ -9,4 +9,6 @@
    
 ## 클러스터 아키텍처
 ![image](https://github.com/JunPyo0117/CI-CD/assets/71053769/ebe3d9f7-7fff-4695-b952-533cfee44d38)
+![image](https://github.com/JunPyo0117/CI-CD/assets/71053769/9ce0d29e-5c5f-4e3e-a784-012286151398)
+
   
